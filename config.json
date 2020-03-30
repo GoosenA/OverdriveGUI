@@ -1,0 +1,7 @@
+{
+    "Player" : "A - Snek", 
+    "Opponent" : "B - CoffeeRef",
+    "FolderPrepend" : "match/Round ",
+    "GlobalState" : "GlobalState.json",
+    "game_speed" : 10
+}

@@ -5,7 +5,7 @@ A simple GUI for the 2020 Entelect Challenge - Overdrive
 
 
 ## Requirements
-The GUI is written in Python3 and requires pygame to run
+The GUI is written in Python3 and requires pygame to run.
 
 ## Usage
 ### Setup

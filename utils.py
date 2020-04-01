@@ -29,11 +29,11 @@ def get_round_as_string(round):
 
 def read_json(round, config):
     rnd_as_str = get_round_as_string(round)
-    player_file = config["FolderPrepend"]+rnd_as_str+'/'+config["Player"]+'/JsonMap.json'
+    player_file = config["FolderPrepend"]+"/Round "+rnd_as_str+'/'+config["Player"]+'/JsonMap.json'
     with open(player_file) as f:
         player_data = json.load(f)
 
-    opponent_file = config["FolderPrepend"]+rnd_as_str+'/'+config["Opponent"]+'/JsonMap.json'
+    opponent_file = config["FolderPrepend"]+"/Round "+rnd_as_str+'/'+config["Opponent"]+'/JsonMap.json'
     with open(opponent_file) as f:
         opponent_data = json.load(f)
 

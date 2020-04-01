@@ -50,7 +50,7 @@ while not done:
             user_exit = True
 
     print(f'ROUND: {round}')
-    if round > 0 and not Path(config["FolderPrepend"]+utils.get_round_as_string(round)+"/GlobalState.json").exists():
+    if round > 0 and not Path(config["FolderPrepend"]+"/Round "+utils.get_round_as_string(round)+"/GlobalState.json").exists():
         print("File not found")
         done = True
         break

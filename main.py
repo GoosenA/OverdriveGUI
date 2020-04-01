@@ -1,5 +1,6 @@
 import pygame
 import utils
+import os
 
 from utils import SurfaceObject
 from pathlib import Path
@@ -50,7 +51,8 @@ while not done:
             user_exit = True
 
     print(f'ROUND: {round}')
-    if round > 0 and not Path(config["FolderPrepend"]+"/Round "+utils.get_round_as_string(round)+"/GlobalState.json").exists():
+    f = Path(config["FolderPrepend"]+"/Round "+utils.get_round_as_string(round))/config["GlobalState"]
+    if round > 0 and not f.exists():
         print("File not found")
         done = True
         break

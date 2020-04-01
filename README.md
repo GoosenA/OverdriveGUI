@@ -2,7 +2,8 @@
 A simple GUI for the 2020 Entelect Challenge - Overdrive
 
 ## Description
-
+This program reads the match logs and displays the game state for both players. It also displays information for each of the players such as speed and state.
+![Screenshot](/images/GUIScreenshot.png)
 
 ## Requirements
 The GUI is written in Python3 and requires pygame to run.
